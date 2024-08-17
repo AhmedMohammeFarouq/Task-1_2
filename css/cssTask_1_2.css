@@ -1,0 +1,90 @@
+/* Start Variables*/
+:root {
+    --main-color: #e6c521 ;
+    --letter-colors: #555;
+}
+/* End Variables*/
+/* Start Global Rules */
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+body {
+    font-family: "Work Sans", sans-serif;
+    background-color: aliceblue;
+}
+/* Small */
+@media (min-width: 750px ){
+    .services {
+        width: 750px;
+    }
+}
+/* Medium */
+@media (min-width: 992px ){
+    .services {
+        width: 970px;
+    }
+}
+/* Large */
+@media (min-width: 1200px ){
+    .services {
+        width: 1170px;
+    }
+}
+/* End Global Rules */
+.services{
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fill , minmax(280px ,1fr) );
+
+}
+.page-title {
+    padding-top: 100px;
+    padding-bottom: 50px;
+    width: 300px;
+    min-width: 100%;
+    display:grid;
+    text-align: center;
+    font-weight: 400;
+    font-size: 20px;
+}
+.services .feat {
+    background-color: white;
+    height: 350px;
+    border-radius: 60px;
+    border: 12px solid aliceblue; ;
+    text-align: center ;
+    z-index: -1;
+}
+.services .feat:not(:nth-child(odd)) {
+    margin-top: 60px;
+    }
+.services .feat i {
+    color:whitesmoke;
+    font-size: 35px;
+    height: 40px;
+    border-bottom: 80px;
+} 
+.services .feat .background-img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background-image: linear-gradient(to right, #ccd659 5%, #e03f6c 95%);
+    position: relative;
+    left: 50%;
+    transform: translate(-50%, 70%);
+    z-index: -1;
+}
+.services .feat h3 {
+    font-weight: 600;
+    padding-top: 20px; 
+    color: #333;
+}
+.services .feat p {
+    color: var(--letter-colors);
+}
+
